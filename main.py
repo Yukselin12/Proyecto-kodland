@@ -37,7 +37,7 @@ def dato_de_Don_pollo():
 @app.route("/eldonpollo")
 def Waza():
     meme_alet = random.choice(os.listdir("images_gatitos"))
-    return send_file(f'images_gatitos/{meme_alet}', mimetype='image/jpeg')
+    return send_file(f'images_gatitos/{meme_alet}', mimetype='image/jpeg <title>Imagenes preferidas de Do Pollo</title>')
 
 @app.route("/")                    
 def hello_donpollo():
