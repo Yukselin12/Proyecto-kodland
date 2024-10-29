@@ -18,7 +18,7 @@ waza = [
 
 @app.route("/")                    
 def hello_world():
-    return '<h1>WAAAAAAZAAAAAAAAAAA!!!</h1><a href="/8">Ver datos de Don pollo</a> <style>a:hover{color: blue; transition: 1s;}a{transition: 1s;}</style>'
+    return '<h1>WAAAAAAZAAAAAAAAAAA!!!</h1><a href="/8">Ver datos de Don pollo</a> <style>a:hover{color: blue; transition: 1s;}a{transition: 1s;}</style> <h2><a href="eldonpollo">Imagenes preferidas de Don Pollo<a><h2>'
 
 @app.route("/8")                          
 def dato_de_Don_pollo():
