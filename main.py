@@ -17,10 +17,12 @@ waza = [
 ]
 
 waza2 = [
-    "UN VIDEO MA MI GENTE!!!"
+    "UN VIDEO MA MI GENTE!!!",
     "EL QUE QUIERA PELDE EL TIEMPO ENTRE A MI PELFIL",
     "WAAAZAAAAAAA!!!",
-    "MALA NOTICIA MI GENTE MALA NOTICIA"
+    "MALA NOTICIA MI GENTE MALA NOTICIA",
+    "WAZA WAZA WAZAAAAAAAAAAAAAAAAA!!!",
+    "DOOON POLLOOO!"
 ]
 
 @app.route("/")                    
