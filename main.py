@@ -28,13 +28,13 @@ waza2 = [
 
 @app.route("/")                    
 def hello_world():
-    return f'<title>Pagina de Don Pollo</title> <h1>{random.choice(waza2)}</h1> <h2><a href="/8">Ver datos de Don pollo</a></h2> <h2><a href="Imagenes Preferidas de Don Pollo">Imagenes preferidas de Don Pollo</a><h2>'
+    return f'<title>Pagina de Don Pollo</title> <h1>{random.choice(waza2)}</h1> <h2><a href="/8">Ver datos de Don pollo</a></h2> <h2><a href="Imagenes_preferidas_de_Don_Pollo">Imagenes preferidas de Don Pollo</a><h2>'
 
 @app.route("/8")                          
 def dato_de_Don_pollo():
     return f'<title>Dato de Don Pollo</title> <h2>{random.choice(waza)} <a href="/">Regresar a ver los datos de don pollo</a></h2>'
 
-@app.route("/Imagenes preferidas de Don Pollo")
+@app.route("/Imagenes_preferidas_de_Don_Pollo")
 def Waza():
     meme_alet = random.choice(os.listdir("images_gatitos"))
     return send_file(f'images_gatitos/{meme_alet}', mimetype='image/jpeg')
