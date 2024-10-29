@@ -32,7 +32,7 @@ def hello_world():
 
 @app.route("/8")                          
 def dato_de_Don_pollo():
-    return f'<h2>{random.choice(waza)} <a href="/">Regresar a ver los datos de don pollo</a></h2>'
+    return f'<title>Dato de Don Pollo</title> <h2>{random.choice(waza)} <a href="/">Regresar a ver los datos de don pollo</a></h2>'
 
 @app.route("/eldonpollo")
 def Waza():
