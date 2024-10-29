@@ -43,6 +43,9 @@ def Waza():
 def hello_donpollo():
     return f'<h1>{random.choice(waza2)}<h1>'
 
+@app.route("/Imagenes_preferidas_de_Don_Pollo")
+def Waza1():
+    return '<title>Imagenes preferidas de Don Pollo</title>'
 
 if __name__ == "__main__":
     app.run(debug=True)
