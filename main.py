@@ -22,7 +22,8 @@ waza2 = [
     "WAAAZAAAAAAA!!!",
     "MALA NOTICIA MI GENTE MALA NOTICIA",
     "WAZA WAZA WAZAAAAAAAAAAAAAAAAA!!!",
-    "DOOON POLLOOO!"
+    "DOOON POLLOOO!",
+    "VAMO A COME ETE POLLO *ring ring* MANO ETA PERSONA NO ME DEJAN GRABA. MANOOOO"
 ]
 
 @app.route("/")                    
