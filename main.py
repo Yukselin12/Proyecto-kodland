@@ -16,9 +16,16 @@ waza = [
     "Las redes sociales tienen aspectos positivos y negativos, y debemos ser conscientes de ambos cuando utilicemos estas plataformas."
 ]
 
+waza2 = [
+    "UN VIDEO MA MI GENTE!!!"
+    "EL QUE QUIERA PELDE EL TIEMPO ENTRE A MI PELFIL",
+    "WAAAZAAAAAAA!!!",
+    "MALA NOTICIA MI GENTE MALA NOTICIA"
+]
+
 @app.route("/")                    
 def hello_world():
-    return '<h1>WAAAAAAZAAAAAAAAAAA!!!</h1><h2><a href="/8">Ver datos de Don pollo</a></h2> <style>a:hover{color: blue; transition: 1s;}a{transition: 1s;}</style> <h2><a href="eldonpollo">Imagenes preferidas de Don Pollo</a><h2>'
+    return f'<title>Pagina de Don Pollo</title> <h1>{random.choice(waza2)}</h1> <h2><a href="/8">Ver datos de Don pollo</a></h2> <h2><a href="eldonpollo">Imagenes preferidas de Don Pollo</a><h2>'
 
 @app.route("/8")                          
 def dato_de_Don_pollo():
@@ -28,6 +35,11 @@ def dato_de_Don_pollo():
 def Waza():
     meme_alet = random.choice(os.listdir("images_gatitos"))
     return send_file(f'images_gatitos/{meme_alet}', mimetype='image/jpeg')
+
+@app.route("/")                    
+def hello_donpollo():
+    return f'<h1>{random.choice(waza2)}<h1>'
+
 
 if __name__ == "__main__":
     app.run(debug=True)
