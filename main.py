@@ -34,10 +34,10 @@ def hello_world():
 def dato_de_Don_pollo():
     return f'<title>Dato de Don Pollo</title> <h2>{random.choice(waza)} <a href="/">Regresar a ver los datos de don pollo</a></h2>'
 
-@app.route("/eldonpollo")
+@app.route("/Imagenes preferidas de Don Pollo")
 def Waza():
     meme_alet = random.choice(os.listdir("images_gatitos"))
-    return send_file(f'images_gatitos/{meme_alet}', mimetype='image/jpeg <title>Imagenes preferidas de Do Pollo</title>')
+    return send_file(f'images_gatitos/{meme_alet}', mimetype='image/jpeg')
 
 @app.route("/")                    
 def hello_donpollo():
